@@ -1,5 +1,6 @@
 @charset "utf-8";
 
+/*These are web fonts the give the web page some style */
 @font-face {
     font-family: Champagne;
     src: url('cac_champagne.woff') format('woff'),
@@ -32,6 +33,10 @@
 
 */
 /* Structural Styles */
+/*The background color is so you can make the background the color you what.
+The font family gives the letters style.
+The padding is to space out stuff evenly.
+Font size lets you choose the size of the font. */
 html {
     background-color: hsl(91, 8%, 56%);
 }
@@ -48,23 +53,23 @@ header {
 p {
     margin: 0px;
     padding: 5px 25px 25px 25px;
-    text-align: center;
 }
 
 body>p {
     font-size: 1.1em;
-    text-align: center
+    text-align: center;
 }
 
-article {
+address {
     font-style: normal;
     font-size: 0.9em;
     text-align: center;
     padding-top: 10px;
-    padding-bottom: 10px
+    padding-bottom: 10px;
 }
 
 /* Navigation Styles */
+/*These are to allow you to either hover over something and it will take you to the link you clicked. */
 nav a:link,
 nav a:visited {
     font-family: 'Trebuchet MS', Helvetica, sans-serif;
@@ -82,7 +87,7 @@ nav a:hover {
 }
 
 /* Section Styles */
-h1 section.playbill {
+section.playbill h1 {
     font-size: 3em;
     font-weight: normal;
     margin: 0px;
@@ -122,3 +127,14 @@ section#play4 h1 {
 }
 
 /* Description List Styles */
+dt {
+    font-size: 1.3em;
+    font-weight: bold;
+    color: hsla(0, 0%, 0%, 0.4);
+}
+
+dd {
+    font-size: 1.3em;
+    margin-left: 0px;
+    margin-bottom: 10px;
+}
